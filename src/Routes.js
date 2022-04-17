@@ -1,6 +1,3 @@
-import "./App.css";
-import { AppRoutes } from "./Routes";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //import { lazy } from "react";
 import { Layout } from "./shared/Layout";
@@ -12,7 +9,7 @@ import { Error } from "./shared/Error";
 // const Final = lazy(() => import("./final/Final"));
 // const NotFoundScreen = lazy(() => import("./shared/NotFoundScreen"));
 
-const App = () => {
+export const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Layout>
@@ -26,5 +23,3 @@ const App = () => {
     </BrowserRouter>
   );
 };
-
-export default App;
