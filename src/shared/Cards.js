@@ -73,7 +73,7 @@ export const Cards = () => {
                   <div className="text-lg text-gray-600 lg:leading-7 md:leading-10 f-f-r py-4 md:py-8">
                     <p>
                       Ce rapport n'est pas disponible pour le moment. Revenez
-                      fin mai 2022 ! Il condiendra :
+                      fin mai 2022 ! Il contiendra :
                     </p>
                     <ul className="list-disc pl-10">
                       <li>
