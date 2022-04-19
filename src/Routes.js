@@ -14,7 +14,7 @@ export const AppRoutes = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path="/" component={Home} /> <Home />
+          <Route exact path="/" component={Home} />
           <Route path="/lancement" component={<Lancement />} />
           <Route path="/final" component={<Final />} />
           <Route path="*" component={<Error />} />

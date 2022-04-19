@@ -1,5 +1,5 @@
 import "./App.css";
-import { AppRoutes } from "./Routes";
+// import { AppRoutes } from "./Routes";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //import { lazy } from "react";

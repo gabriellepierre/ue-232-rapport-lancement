@@ -3,7 +3,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Accueil", href: "../home/Home" },
+  { name: "Accueil", href: "/" },
   { name: "Rapport de lancement", href: "/lancement" },
   { name: "Rapport final", href: "/final" },
 ];
