@@ -11,7 +11,7 @@ const Home = () => {
           </h1>
           <p className="text-base leading-normal text-center text-white mt-6">
             Participation à la conception, l’architecture, l’analyse et le
-            développement d’applications web et mobile. <br /> J'utiliserais des
+            développement d’applications web et mobile. <br /> J'utiliserai des
             technologies de développement modernes tels que la stack MERN (Mongo
             Express React Node) ou PHP.
           </p>

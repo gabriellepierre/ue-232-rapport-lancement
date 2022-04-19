@@ -37,11 +37,11 @@ export const Lancement = () => {
                 L'équipe
               </h3>
               <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
-                L’entreprise est comsttuée de 12 personnes. L’équipe de
+                L’entreprise est constituée de 12 personnes. L’équipe de
                 développement est composée du responsable de service (Jérémy
                 Paris, mon tuteur de stage), d’un ingénieur IT (Ozcan Sevik), et
                 de trois développeurs full stack (Benjamin Caure, Roméo Brilland
-                et Mao De Matos). Je serais intégrée à cette équipe.
+                et Mao De Matos). Je serai intégrée à cette équipe.
               </p>
             </div>
             <div className="lg:pl-5 lg:border-l-2">
@@ -200,7 +200,7 @@ export const Lancement = () => {
                         quotidienne sur leur projet.
                       </li>
                       <li>
-                        Réuion avec des clients : <br />
+                        Réunions avec des clients : <br />
                         compréhension du projet et propositions quant aux
                         fonctionnalités demandées.
                       </li>
@@ -268,13 +268,13 @@ export const Lancement = () => {
             obligatoires, et donc ne seront pas « nuls », ce qui simplifie la
             programmation et réduit les lignes de code. Pour manipuler ces
             données, le lien entre la base de données et le front end sera les
-            API. Pour communiquer avec celles-ci, nous utiliseront des requêtes
+            API. Pour communiquer avec celles-ci, nous utiliserons des requêtes
             ReactQueries.
           </p>
           <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
             {" "}
             Les applications web sont donc réalisées en React.js. Pour apprendre
-            à manier cette technologie, je me baserais essentiellement sur la
+            à manier cette technologie, je me baserai essentiellement sur la
             documentation officielle. L'entreprise utilise les Hooks : ce sont
             des fonctions qui permettent l’utilisation de fonctionnalités de
             React sans écrire de classe.
@@ -288,7 +288,7 @@ export const Lancement = () => {
           </p>
           <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
             L’entreprise utilise également twin.macro, une extension qui
-            remplasse les classes Tailwind en objets CSS. Auth0 est un système
+            remplace les classes Tailwind en objets CSS. Auth0 est un système
             d’authentification : l’API d’auth0 est utilisée pour sécuriser les
             authentifications à l’application.
           </p>
