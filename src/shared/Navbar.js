@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
+import { Link } from "./Link";
 
 const navigation = [
   { name: "Accueil", href: "/" },
@@ -78,11 +78,10 @@ export const Navbar = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Link to={item.href}>
+                <Link key={item.name} to={item.href}>
                   <Disclosure.Button
                     key={item.name}
                     as="a"
-                    href={item.href}
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"
