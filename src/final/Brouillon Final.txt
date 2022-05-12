@@ -1,0 +1,62 @@
+I) Planning du travail réalisé
+Semaine 1 :
+2 premiers jours : veille technologique et étude des technologies utilisées par l'entreprise
+30 mars : faire liste des choses à changer / améliorer sur Geneste
+31 mars : reglement de tous les problemes sauf menu + dates + timesheet ; maquettes pour timesheet (sur téléphone)
+01 avril : menu (problème url) + réunion (fruits et legs)
+Semaine 2 :
+Comptoir sports : référencement (regarder tout)
+geneste : rendre code générique (pour timesheet cré + update) ; communication avec BDD pour le formulaire ; commencement de l'edition du formulaire
+OMS formation : aide
+Yoga : réunion 
+semaine 3 : 
+Geneste : terminer formulaire, mise en page, et gestion des dates et de l'export CSV des données par semaine des chantiers
+Semaine 4 : 
+Gaia tree yoga : mise en page, installation et paramétrage de plug-ins, problème avec wordpress donc essayer de déterminer d'où il vient (c'était le theme) et revenir en arrière dans les sauvegarde pour régler le pb (grâce à ovh)
+Semaine 5 : Descendre le theme en local pour tester d'où vient le problème, c'était la version de PHP qui n'était pas à jour ; mise en page n° 2 (car on était revenu en arrière), initialisation des cookies / mentions légales / CGU ; création compte stripe du client, recherche de plug in de reservation plus adéquat (tous payants)
+Semaine 6 : 
+acoudesign : i18 Next (traduction) ; inputs de titres et commentaire, css, fusion de deux zones qui utilisent le même document, mise en page, export HTML (réussi à exporter un fichier, mise dans un contexte (hook) les données nécessaires au document HTML à exporter) commencement CSS du fichier d'export
+Gaia tree yoga : barre de cookies; mises à jour de plug-in + thème
+Valvert : Projet auquel je n'ai pas participé mais on a regarder tous ensemble les designs, on a chacun donné nos avis sur les choses à améliorer ou non (car rdv avec le client le mardi d'après)
+Semaine 7 :
+acoudesign : html2canvas, transformer les screens en base64 pour les mettre dans le fichier HTML sans avoir à créer de fichier ZIP (erreur d'ailleurs j'en avais créé un alors qu'il fallait pas) ; mise en page CSS de l'export ; ajout d'un loader ; {FIN du projet ?? }
+Semaine 8 :
+
+
+
+
+
+
+II) Description du projet et des missions rélisées
+a) Geneste
+Après avoir étudié les technologies de l'éentreprise, le premier projet qu'on m'a confié est l'application métier Geneste.
+Pour commencer, on m'a présenté l'application déjà réalisée par mon collègue Roméo. Elle n'était pas tout à fait finalisée, et le client avaient des recommandations. Nous avons donc commencé par éplucher l'application pour faire le liste des choses à changer. Il y avait pas mal d'éléments de mise en page à modifier, mais le plus important changement à apporter était le formulaire de présence à remplir par les employés, le coeur de l'application. Celui-ci n'avait pas plu au client, il trouvait les boutons trop petits et la page n'était pas assez claires à ses yeux.
+
+
+
+
+b) Gaia tree yoga
+Gaia Tree Yoga est un site e-commerce réalisé avec WordPress. Il s'agit d'une entrepreneuse qui donne des cours yoga et souhaitait avoir un site pour présenter sa micro-entreprise et permettre aux clients de révserver leurs cours via ce biais.
+Lorsque je suis arrivée chez Becoms, le projet était déjà commencé. Je devais tout d'abord chercher des extensions de reservation qui permettraient au client de réserver une ou plusieurs scéances (il est possible d'acheter des packs), qui permettaient le paiement en ligne (avec Paypal et Stripe dans l'idéal). Après quelques recherches, je m'étais dirigée vers le plug-in Booking Calendar, l'extension de reservation gratuite la plus utilisée. La documentation était complète et l'extension me semblait adéquate. Cependant, en la paramétrant, je me suis rendue compte qu'elle ne permettait pas de réserver des créneaux horaires, et qu'elle ne permettait pas non plus de mettre en place des cours à plusieurs. J'ai donc dû recommencer mes recherches mais en sachant cette fois ce quoi chercher : pas seulement une extension de reservation, mais de reservation de classes. Ainsi, j'ai pu trouver des extensions qui permettent de reserver un crénau dans la journée et non plusieurs jours. J'ai donc d'ici trié selon les extensions qui permettaient le paiement avec Paypal et Stripe automatisé et que plusieurs personnes pouvaient resver le même cours. J'ai ainsi pu trouver dexu extensions qui s'accordaient avec les demandes du client : (continuer truc sur extension).
+J'ai fais une réunion avec Maryline le vendredi 8 avril. De là, j'ai dû éplucher l'entièreté du site pour savoir quoi changer ormis l'extension de reservation. Je me suis rendue compte que quelques éléments de mise en page n'étaient pas finalisés. J'ai donc modifié le footer, j'ai harmonisé les headers qui n'étaient pas tous mis en page de la même manière, (...)
+Pour en revenir aux extensions, j'ai également installé une extension qui gère les cookies : GRDP cookies ; une extension de sécurité : Wordfence ; (...)
+
+
+
+
+c) Acoudesign
+
+
+
+
+
+III) Analyse du travail réalisé (points forts, points d'amélioration et actions correctives)
+
+
+
+
+
+IV) Bilan personnel 
+
+
+
