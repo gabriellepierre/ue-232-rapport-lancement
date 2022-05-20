@@ -30,7 +30,19 @@ Semaine 8 :
 II) Description du projet et des missions rélisées
 a) Geneste
 Après avoir étudié les technologies de l'éentreprise, le premier projet qu'on m'a confié est l'application métier Geneste.
-Pour commencer, on m'a présenté l'application déjà réalisée par mon collègue Roméo. Elle n'était pas tout à fait finalisée, et le client avaient des recommandations. Nous avons donc commencé par éplucher l'application pour faire le liste des choses à changer. Il y avait pas mal d'éléments de mise en page à modifier, mais le plus important changement à apporter était le formulaire de présence à remplir par les employés, le coeur de l'application. Celui-ci n'avait pas plu au client, il trouvait les boutons trop petits et la page n'était pas assez claires à ses yeux.
+Pour commencer, on m'a présenté l'application déjà réalisée par mon collègue Roméo. Elle n'était pas tout à fait finalisée, et le client avaient des recommandations. Nous avons donc commencé par éplucher l'application pour faire le liste des choses à changer. Il y avait pas mal d'éléments de mise en page à modifier, mais le changement plus important était le formulaire de présence à remplir par les employés, le coeur de l'application. Celui-ci n'avait pas plu au client, il trouvait les boutons trop petits et la page pas assez claire à ses yeux.
+Tout d'abord, j'ai étudié le code existant. Découvrant React, j'ai mis quelques temps à bien comprendre l'arborescence de l'application et les composants et fonctions qui la constituent. J'ai choisi de commencer par le plus simple pour m'habituer plus facilement au framework. J'ai modifié des tailles de boutons, ajusté les dimensions de la page pour l'aspect responsive, corrigé quelques fautes d'orthographe, harmonisé la mise en page de formulaires...
+Une fois tous ces petits éléments corrigés, j'étais plus à l'aise avec les fichiers et la structure de l'application et de React. J'ai alors fais une maquette pour téléphone de la page de présence comme je l'avais envisagée. 
+[INSERER SCREEN DES MAQUETTES]
+C'est la [num] qui a été retenue.
+Nous n'avions pas beaucoup de directives du client : nous avions seulement le format papier des feuilles de présence qu'il utilisait jusqu'ici et les recommandations sur l'application citées plus tôt. Il était donc compliqué de développer une application qui correspondrait à ses attentes. 
+Les défis de ce projet étaient de manipuler les technologies tout juste découvertes et d'imaginer quelque chose qui plairait au client alors que sa demande était floue. 
+Avant d'attaquer la feuille de présence, j'ai construit les squelettes des pages pour le chargement au cas où l'utilisateur n'aurait pas une bonne connexion. Le code se présente ainsi :
+[Insérer screen adéquat]
+Dans React, on peut stocker l'état d'une variable grâce au Hook useState. Celui-ci permet notamment de définir l'état de chargement, et ainsi faire afficher les fonctions de chargement lorsque la page n'est pas tout à fait chargée. Il suffit de mettre une condition qui indique le contenu à afficher si le chargement de la page est en "isLoading", et afficher le résultat final si le chargement de la page est en "success".
+
+
+Concernant la feuille de présence, nous devions faire en sorte que l'utilisateur puisse marquer le nombre d'heures effectuées pour chaque journée de la semaine, indiquer s'il avait pris son véhicule personnel ou non, et renseigner le motif de son absence. Au départ, la feuille était constitué du nombre d'heures par jour de la semaine, avec deux boutons à cocher (un pour le véhicule personnel sous forme de logo de voiture, et un pour l'absence sous forme de logo d'oeil barré). Nous avons pensé qu'il était plus judicieux d'enlever le bouton pour l'absence, et ajouter "0" au nombre d'heures. Je devais donc insérer une condition qui afficherait une liste déroulante de motifs d'absence si le nombre d'heures était égal à zéro, et afficher une checkbox pour la voiture si le nombre d'heures était supérieur à zéro. J'ai voulu garder un design proche de celui déjà fait puisqu'il me semblait sobre et moderne.
 
 
 
