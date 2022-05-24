@@ -19,8 +19,11 @@ acoudesign : i18 Next (traduction) ; inputs de titres et commentaire, css, fusio
 Gaia tree yoga : barre de cookies; mises à jour de plug-in + thème
 Valvert : Projet auquel je n'ai pas participé mais on a regarder tous ensemble les designs, on a chacun donné nos avis sur les choses à améliorer ou non (car rdv avec le client le mardi d'après)
 Semaine 7 :
-acoudesign : html2canvas, transformer les screens en base64 pour les mettre dans le fichier HTML sans avoir à créer de fichier ZIP (erreur d'ailleurs j'en avais créé un alors qu'il fallait pas) ; mise en page CSS de l'export ; ajout d'un loader ; {FIN du projet ?? }
-Semaine 8 :
+acoudesign : html2canvas, transformer les screens en base64 pour les mettre dans le fichier HTML sans avoir à créer de fichier ZIP (erreur d'ailleurs j'en avais créé un alors qu'il fallait pas) ; mise en page CSS de l'export ; ajout d'un loader ; {FIN du projet}
+Semaine 8 : 
+Tests acoudesign, gaia tree yoga
+Semaine 9 : 
+Fin de gaia tree yoga
 
 
 
@@ -63,15 +66,47 @@ Les défis de ce projet étaient de manipuler les technologies tout juste décou
 
 
 b) Gaia tree yoga
-Gaia Tree Yoga est un site e-commerce réalisé avec WordPress. Il s'agit d'une entrepreneuse qui donne des cours yoga et souhaitait avoir un site pour présenter sa micro-entreprise et permettre aux clients de révserver leurs cours via ce biais.
-Lorsque je suis arrivée chez Becoms, le projet était déjà commencé. Je devais tout d'abord chercher des extensions de reservation qui permettraient au client de réserver une ou plusieurs scéances (il est possible d'acheter des packs), qui permettaient le paiement en ligne (avec Paypal et Stripe dans l'idéal). Après quelques recherches, je m'étais dirigée vers le plug-in Booking Calendar, l'extension de reservation gratuite la plus utilisée. La documentation était complète et l'extension me semblait adéquate. Cependant, en la paramétrant, je me suis rendue compte qu'elle ne permettait pas de réserver des créneaux horaires, et qu'elle ne permettait pas non plus de mettre en place des cours à plusieurs. J'ai donc dû recommencer mes recherches mais en sachant cette fois ce quoi chercher : pas seulement une extension de reservation, mais de reservation de classes. Ainsi, j'ai pu trouver des extensions qui permettent de reserver un crénau dans la journée et non plusieurs jours. J'ai donc d'ici trié selon les extensions qui permettaient le paiement avec Paypal et Stripe automatisé et que plusieurs personnes pouvaient resver le même cours. J'ai ainsi pu trouver dexu extensions qui s'accordaient avec les demandes du client : (continuer truc sur extension).
-J'ai fais une réunion avec Maryline le vendredi 8 avril. De là, j'ai dû éplucher l'entièreté du site pour savoir quoi changer ormis l'extension de reservation. Je me suis rendue compte que quelques éléments de mise en page n'étaient pas finalisés. J'ai donc modifié le footer, j'ai harmonisé les headers qui n'étaient pas tous mis en page de la même manière, (...)
-Pour en revenir aux extensions, j'ai également installé une extension qui gère les cookies : GRDP cookies ; une extension de sécurité : Wordfence ; (...)
-
+Gaia Tree Yoga est un site e-commerce réalisé avec WordPress. Il s'agit d'une entrepreneuse qui donne des cours yoga et souhaitait avoir un site pour présenter sa micro-entreprise et permettre aux clients de révserver leurs cours par ce biais.
+Lorsque je suis arrivée chez Becoms, le projet était déjà commencé. Je devais tout d'abord chercher des extensions de reservation qui permettraient au client de réserver une ou plusieurs scéances (il est possible d'acheter des packs), qui permettaient le paiement en ligne (avec Paypal et Stripe dans l'idéal) et de permettre la reservation par plusieurs personnes du même créneau horaire. Nous avons donc installé le plug-in Woocommerce Appointments, l'extension qui permet la réservation de créneaux horaires liée avec Woocommerce. J'ai créé grâce à ce plug-in des prduits planifiables (un pour chaque cours différent).
+J'ai fais une réunion avec Maryline le vendredi 8 avril. De là, j'ai dû éplucher l'entièreté du site pour savoir quoi changer ormis l'extension de reservation. Je me suis rendue compte que quelques éléments de mise en page n'étaient pas finalisés. J'ai donc modifié le footer, j'ai harmonisé les headers qui n'étaient pas tous mis en page de la même manière, etc. La modification de la mise en page a été réalisée en grande partie avec l'outil WPBakery Page Builder.
+Pour en revenir aux extensions, j'ai également installé une extension qui gère les cookies : GRDP cookies ; une extension de sécurité : Wordfence.
+Concernant les packs de cours à acheter, nous avons mis en place un système de code promo qui est transmis lors de l'achat d'un pack, et utilisable lors de la réservation d'un cours.
+Pour ce faire, j'ai dû modifier le fichier "function.php". J'ai créé une fonction ("generate_coupon") qui permettait la création d'un code aléatoire :
+(insérer capture)
+Ensuite, j'ai ajouté une condition qui ajustait les paramètres du coupon en fonction du pack acheté (par exemple : utilisable 10 fois pour le pack de 10 séances). Il fallait alors générer un mail au client lors du paiement pour lui transmettre le code promo en question.
+Cette fonction est réalisée lors du paiement grâce au hook woocommerce "woocommerce_order_status_completed" renseigné de cette manière :
+add_action (woocommerce_order_status_completed, generate_coupon);
+Cette ligne signifie qu'une action est ajouté : lors du changeent du statut de la commande en "Terminée", la fonction "generate_coupon" est lancée.
+Pour en arriver au bon résultat, j'ai tout testé en local : j'ai descendu le thème du site et j'ai recréé les pages et produits, et j'ai rajouté tous les plug-ins utilisés. Pour tester les mails, j'ai également utilisé smtp4dev, un serveur d'email permettant de tester les mails en local. 
+Ma reproduction en locale m'a également servie à tester d'autres aspects, et notamment à réparer une erreur que j'avais eu à cause du thème (qui s'est avéré venir de la version de php, non compatible avec le thème).
 
 
 
 c) Acoudesign
+Acoudesign est une entreprise de solutions d’insonorisation et de sonorisation pour le confort acoustique des interieurs dans le domaine du bâtiment et des transport. Ils réalisent ainsi des tests sur des enceintes, et fournissent un rapport pour chaque test avec le diagramme du transducteur, les paramètres, un graphique d’impédance et un graphique d’impédance inversée, un graphique sur l’évolution de la température, et (insérer dernier graphique)
+L’application à réaliser consiste en la production du rapport en lui même. Il doit ainsi contenir des champs qui vont calculer, selon les données d’un fichier, les graphiques, un champs pour insérer l’image du diagramme du transducteur, et des inputs pour le titre, sous-titre et commentaire.
+Je me suis occupée principalement de l’export de ces données en html.
+Pour ce faire, j’ai d’abord créé une fonction d’export qui exportait un fichier HTML vide pour tester. J’ai donc réalisé cette tâche ainsi :
+(inserer screen)
+
+
+j’ai utilisé le hook useContext pour stocker les données remplies et les faire passer d’un composant à un autre pour tout déplacer vers le la fonction d’export et ainsi construire la page HTML à rendre. 
+Après avoir réussi à exporter les données des inputs, j’ai réalisé qu’il serait trop compliqué et trop long de faire passer les graphiques en passant par le contexte. Je suis alors passée par une autre méthode que celle que j’avais envisagée : mettre dans le contexte des captures d’écrans des graphiques grâce à html2canvas.
+« html2canvas » permet de transformer tout ou une partie d’une page en canvas, et donc en image. Pour l’utiliser, il faut faire ainsi :
+
+html2canvas(document.body).then(function(canvas) {
+    document.body.appendChild(canvas);
+});
+
+Comme on peut le voir, il s’agit d’une promesse. Il faudra la réaliser en asynchrone, de cette manière :
+(inserer screen)
+Si la promesse n’est pas faite en asynchrone avec un « await », alors l’export ne fonctionnera pas parce que la promesse essayera de fonctionner indéfiniment et rendra (…)
+L’écran est donc capturé. Mais dans un fichier HTML seul, les images ne s’affichent pas. Il faut alors les traduire en format base64 pour que le HTML puisse les lire et les afficher sans avoir à joindre de fichier.
+(inserer code)
+On stocke donc le résultat dans le contexte pour les afficher dans le fichier HTML exporté.
+
+Ensuite, j'ai rajouté des "loaders" (trouvés sur TailwindUI) pour montrer à l'utilisateur que le fichier ou l'export est en train de charger.
+Pour finir, j'ai testé l'application pour trouver toutes les failles, tous les petits bugs pour les régler et mettre le projet en production. Le client a vite donné un retour, qui fût par ailleurs très positif. 
 
 
 
@@ -85,5 +120,6 @@ III) Analyse du travail réalisé (points forts, points d'amélioration et actio
 
 IV) Bilan personnel 
 
-
+Globalement, mon stage s'est très bien passé. Il correspond à mes attentes sur tous les points. En termes techniques, j'ai pu apprendre de nouvelles technologies, j'ai développé celles que j'avais déjà étudié, j'ai observé au plus près le quotidien d'un développeur, j'ai appris à adopter une approche du travail différente que celle que j'avais en cours pour m'adapter au mieux. En termes humains, le travail au sein d'une équipe est très stimulant, je me suis facilement sentie à l'aise avec mes collègues et mes compétences en babyfoot se sont décuplées. Cependant, je dirais que je n'ai pas eu assez de retour sur le travail que je fournissais. Avant la dernière semaine, je n'ai pas vraiment eu d'avis sur ce que je faisais, et il m'était donc impossible de savoir quoi améliorer, quoi changer ou non.
+Pour en revenir aux technologies, j'ai apprécié toutes celles que j'ai apprises, sauf wp de merde
 
