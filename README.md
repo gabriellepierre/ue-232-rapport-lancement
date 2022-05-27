@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Rapport de stage
+
+Rapoprt de stage réalisé en React.js pour le stage de 2ème année du DEUST Webmaster et Métiers de l'Internet; parcours développement web et applications mobiles
+
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
