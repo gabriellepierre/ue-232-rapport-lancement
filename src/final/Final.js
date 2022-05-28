@@ -1,6 +1,7 @@
 // import React from "react";
 
 import { Link } from "../shared/Link";
+import { Planning } from "./Planning";
 
 export const Final = () => {
   return (
@@ -24,7 +25,7 @@ export const Final = () => {
             <h3 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800">
               L'application Geneste
             </h3>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Après avoir étudié les technologies de l'entreprise, le premier
               projet qu'on m'a confié est l'application métier Geneste. Pour
               commencer, on m'a présenté l'application déjà réalisée par mon
@@ -58,14 +59,16 @@ export const Final = () => {
               {" "}
               Avant d'attaquer la feuille de présence, j'ai construit les
               squelettes de certaines pages pour le chargement au cas où
-              l'utilisateur n'aurait pas une bonne connexion. Le code se
-              présente ainsi :
+              l'utilisateur n'aurait pas une bonne connexion. Par exemple avec
+              un titre :
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-            /> */}
+            <div className="flex justify-center">
+              <img
+                className=" block lg:ml-10"
+                src="SkeletonTitre.png"
+                alt="Squelette du titre"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Dans React, on peut stocker l'état d'une variable grâce au Hook
               useState. Celui-ci permet notamment de définir l'état de
@@ -75,36 +78,36 @@ export const Final = () => {
               de la page est en "isLoading", et afficher le résultat final si le
               chargement de la page est en "success".
             </p>
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
+              Concernant la feuile de présence, nous devions faire en sorte que
+              l'utilisateur puisse marquer le nombre d'heures effectuées pour
+              chaque journée de la semaine, indiquer s'il avait pris son
+              véhicule personnel ou non, et renseigner le motif de son absence.
+              Au départ, la feuille était constituée du nombre d'heures par jour
+              de la semaine, avec deux boutons à cocher (un pour le véhicule
+              personnel sous forme de logo de voiture, et un pour l'absence sous
+              forme de logo d'oeil barré). Nous avons pensé qu'il était plus
+              judicieux d'enlever le bouton pour l'absence, et ajouter "0" au
+              nombre d'heures. Je devais donc insérer une condition qui
+              afficherait une liste déroulante de motifs d'absence si le nombre
+              d'heures était égal à zéro, et afficher une checkbox pour la
+              voiture si le nombre d'heures était supérieur à zéro. C'est lors
+              de cette tâche que j'ai commencé à manipuler des éléments de la
+              base de données.
+            </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
               {" "}
-              Concernant la feuille de présence, j'ai d'abord fait une maquette
+              Pour le visuel, j'ai voulu garder un design proche de celui déjà
+              fait puisqu'il me semblait sobre et moderne. Voici une maquette
               pour téléphone de la page de présence comme je l'avais envisagée.
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-            /> */}
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
-              J'ai voulu garder un design proche de celui déjà fait puisqu'il me
-              semblait sobre et moderne.
-            </p>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              Nous devions faire en sorte que l'utilisateur puisse marquer le
-              nombre d'heures effectuées pour chaque journée de la semaine,
-              indiquer s'il avait pris son véhicule personnel ou non, et
-              renseigner le motif de son absence. Au départ, la feuille était
-              constituée du nombre d'heures par jour de la semaine, avec deux
-              boutons à cocher (un pour le véhicule personnel sous forme de logo
-              de voiture, et un pour l'absence sous forme de logo d'oeil barré).
-              Nous avons pensé qu'il était plus judicieux d'enlever le bouton
-              pour l'absence, et ajouter "0" au nombre d'heures. Je devais donc
-              insérer une condition qui afficherait une liste déroulante de
-              motifs d'absence si le nombre d'heures était égal à zéro, et
-              afficher une checkbox pour la voiture si le nombre d'heures était
-              supérieur à zéro. C'est lors de cette tâche que j'ai commencé à
-              manipuler des éléments de la base de données.
-            </p>
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="MAQUETTE.png"
+                alt="Maquette fueille de présence"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
               J'ai constaté que le code pouvait être refactorisé et être plus
@@ -124,45 +127,57 @@ export const Final = () => {
               (TimesheetForm) partagé par la création et l'édition, ce qui
               allègera ces deux composants. Même si je n'ai pas pu rendre le
               code aussi générique que je le souhaitais, j'ai quand même pu
-              refactoriser une partie du code. <br />
-              Pour ce faire, j'ai inséré des conditions notamment pour changer
-              le titre si des données sont déjà existantes ou non :
+              refactoriser une partie du code.
             </p>
+            <div className="lg:flex">
+              <p className="focus:outline-none text-base text-gray-600 leading-normal pt-2 pb-2">
+                Le composant de création n'aura plus que la déclaration du
+                formulaire sous cette forme :
+              </p>
+              <img
+                className="lg:flex h-full lg:ml-10"
+                src="TimesheetForm.png"
+                alt="TimesheetForm"
+              />
+            </div>
+            <div className="lg:flex lg:flex-row">
+              <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
+                Et le composant d'édition aura sensiblement la même chose, mais
+                avec l'insertion de données déjà existantes :
+              </p>
+              <img
+                className="mt-1 block lg:ml-10"
+                src="TimesheetFormProp.png"
+                alt="TimesheetForm avec a propriété timesheet définie"
+              />
+            </div>
 
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-            /> */}
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              Le composant de création n'aura plus que la déclaration du
-              formulaire sous cette forme :<br />
-              <span>{/* Screen timesheetform */}</span>
-            </p>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              Et le composant d'édition aura sensiblement la même chose, mais
-              avec l'insertion de données déjà existantes :<br />
-              <span>{/* Screen timesheetform */}</span>
-            </p>
-
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
               {" "}
               Dans le composant de formulaire, j'ai rentré en propriété
               "timesheet", qui représente les données de la feuille de présence.
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-            /> */}
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="TimesheetFormPropDecla.png"
+                alt="Déclaration de dataTimesheetById"
+              />
+            </div>
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Toutes mes conditions concernant la création ou l'édition sont
               faites en fonction de "timesheet" au sein du formulaire. Cette
               variable est affiliée à "dataTimesheetById" dans le composant
-              d'édition. Ce "dataTimesheetById" est déclaré ainsi :<br />
-              {/* <span>screen bout de code</span> */}
+              d'édition. Ce "dataTimesheetById" est déclaré ainsi :
             </p>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="datatimesheetbyiddecla.png"
+                alt="Déclaration de dataTimesheetById"
+              />
+            </div>
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               On comprend ici que pour déterminer la valeur de la donnée, on
               utilise le hook "useTimesheetByIdQuery". Il est créé au sein de
               l'application, et il s'agit d'un useQuery du paquet React Query.
@@ -170,11 +185,18 @@ export const Final = () => {
               asynchrones via une API. J'ai d'ailleurs pu manipuler ce type de
               requête. Initialement, il y avait deux requêtes définies dans
               l'API : une qui permettait d'entrer des données (POST) et une
-              autre qui permettait de les modifier (FETCH). Cependant, en ayant
+              autre qui permettait de les modifier (PATCH). Cependant, en ayant
               plus qu'un formulaire utilisé pour la création et l'édition et non
               plus deux formulaires distincts, je devais utiliser une seule
-              requête qui permettait à la fois le POST et le FETCH.
+              requête qui permettait à la fois le POST et le PATCH.
             </p>
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="ApiUsetimecheetmutation.png"
+                alt="API"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Au départ, chaque variable était stockée dans un useState, ce qui
               signifie que son état était enregistré et mis à jour régulièrement
@@ -191,11 +213,34 @@ export const Final = () => {
               en améliorant la performance. Pour la feuille de présence, nous
               avons donc utilisé cette librairie, en l'installant avec npm. Les
               données entrées dans le formulaire sont renseignées ainsi :
-              {/* // Avant le rendu du formulaire :
-              // (insérer screen)
-              // Au sein du formulaire :
-              // (insérer screen) */}
             </p>
+            <div className="lg:flex lg:flex-row">
+              <div className="lg:pr-5">
+                <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
+                  Avant le rendu du formulaire :
+                </p>
+                <div className="flex justify-center">
+                  <img
+                    className="block"
+                    src="useformdecla.png"
+                    alt="Déclaration useForm"
+                  />
+                </div>
+              </div>
+              <div>
+                <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
+                  Au sein du formulaire pour insérer les données entrées :
+                </p>
+                <div className="flex justify-center">
+                  <img
+                    className="block"
+                    src="useforminscriptiondonnee.png"
+                    alt="Inscription de données dans le useForm"
+                  />
+                </div>
+              </div>
+            </div>
+
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
               Une des fonctionnalités les plus dificiles à réaliser fut
@@ -204,33 +249,41 @@ export const Final = () => {
               j'enregistre en BDD le premier jour de la semaine pour inscrire
               dans le tableau récapitulatif cette date. Ensuite, j'ai inséré un
               tri par date dans le tableau récapitulatif du chantier pour
-              afficher les plus récents au début :{/* // (insérer tableau) */}
-              {/* // (insérer code) */}
+              afficher les plus récents au début ("sort" permettant de trier) :
             </p>
+            <div className="flex justify-center">
+              <img className="block" src="tripardate.png" alt="Tri par date" />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              On remarque que j'ai pris la date au format rendu sans la modifier
-              pour pouvoir mieux la manipuler.
-              {/* (explication code de date). */}
+              Cette partie a été difficle à réaliser car j'avais besoin
+              d'utiliser la date en format par défaut pour trier le tableau
+              (voir code ci-dessus), mais je devais l'afficher en format
+              DD/MM/YYYY (format français) notamment dans le tableau. J'ai donc
+              créé une fonction qui serait utilisable partout où je devais
+              afficher la date en format français :
             </p>
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="Datefonction.png"
+                alt="Fonction de formattage de la date"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Afin de vérifier quelle donnée était inscrite en BDD lorsque
               l'application ne fonctionnait pas à cause d'une erreur, j'ai
               utilisé MongoCompass, une application qui marche avec MongoDB et
               permet d'afficher toutes les données d'une application ainsi que
-              leurs types :{/* // (exemple mongocompass). */}
-            </p>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              {" "}
-              Pour finir, j'ai testé toute l'application pour pouvoir la mettre
-              en production et la rendre au client.
+              leurs types. <br /> Pour finir, j'ai testé toute l'application
+              pour pouvoir la mettre en production et la rendre au client.
             </p>
           </div>
 
           <div>
-            <h3 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800">
+            <h3 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800 pt-10">
               Gaia Tree Yoga
             </h3>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Gaia Tree Yoga est un site e-commerce réalisé avec WordPress. Il
               s'agit d'une entrepreneuse qui donne des cours yoga et souhaitait
               avoir un site pour présenter sa micro-entreprise et permettre aux
@@ -262,43 +315,46 @@ export const Final = () => {
               un système de code promo transmis lors de l'achat d'un pack et
               utilisable lors de la réservation d'un cours. Pour ce faire, j'ai
               dû modifier le fichier "function.php". J'ai créé une fonction
-              ("generate_coupon") qui permettait la création d'un code aléatoire
-              :
+              ("generate_coupon") :
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-          /> */}
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="codepromo.png"
+                alt="Gnération aléatoire du code promo"
+              />
+            </div>
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
-              Ensuite, j'ai ajouté une condition qui ajustait les paramètres du
-              coupon en fonction du pack acheté (par exemple : utilisable 10
-              fois pour le pack de 10 séances) :
+              Cette capture est un bout de cette fonction. On y voit la création
+              d'un code aléatoire composé de 10 caractères (l. 56 et 57) avec
+              une durée de vie limitée (l.55), et les conditions pour pouvoir
+              utiliser ce code promo (l. 58 à 87). Ces paramètres sont mis en
+              place en fonction du pack acheté (par exemple : utilisable 10 fois
+              pour le pack de 10 séances (l. 53)).
+              <br />
+              Ensuite, il fallait alors générer un mail au client lors du
+              paiement pour lui transmettre le code promo en question :
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-          /> */}
 
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
-              Il fallait alors générer un mail au client lors du paiement pour
-              lui transmettre le code promo en question :
-            </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-          /> */}
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="email.png"
+                alt="Gnération de l'email avec le code promo"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Cette fonction est réalisée lors du paiement grâce au hook
               woocommerce "woocommerce_order_status_completed" renseigné de
               cette manière : <br />
-              add_action (woocommerce_order_status_completed, generate_coupon);{" "}
+              <span className="italic">
+                add_action (woocommerce_order_status_completed,
+                generate_coupon);
+              </span>
               <br />
               Cette ligne signifie qu'une action est ajouté : lors du changement
-              du statut de la commande en "Terminée", la fonction
+              du statut de la commande en "Terminée" (completed), la fonction
               "generate_coupon" est lancée.
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
@@ -336,17 +392,17 @@ export const Final = () => {
             </p>
           </div>
           <div>
-            <h3 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800">
+            <h3 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800 pt-10">
               L'application Acoudesign
             </h3>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5">
               Acoudesign est une entreprise de "solutions d’insonorisation et de
               sonorisation pour le confort acoustique des interieurs dans le
               domaine du bâtiment et des transports". Ils réalisent ainsi des
               tests sur des enceintes, et fournissent un rapport pour chaque
               test avec :
             </p>
-            <ul>
+            <ul className="list-disc pl-10 text-gray-600 pb-2">
               <li>le diagramme du transducteur,</li>
               <li>les paramètres,</li>
               <li>
@@ -362,58 +418,49 @@ export const Final = () => {
               l’image du diagramme du transducteur, et des inputs pour le titre,
               sous-titre et commentaire. Je me suis occupée principalement de
               l’export de ces données en html.
-            </p>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              {" "}
+              <br />
               Pour ce faire, j’ai d’abord créé une fonction d’export qui
               exportait un fichier HTML vide pour tester.
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-          /> */}
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="exportfilehtml.png"
+                alt="Fonction qui exporte un fichier html"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              J’ai utilisé le hook useContext pour stocker les données remplies
-              et les faire passer d’un composant à un autre pour tout déplacer
-              vers la fonction d’export et ainsi construire la page HTML à
-              rendre. Après avoir réussi à exporter les données des inputs, j’ai
-              réalisé qu’il serait trop compliqué et trop long de faire passer
-              les graphiques en passant par le contexte. J'ai alors utilisé une
-              autre méthode que celle que j’avais Initialement envisagée :
-              mettre dans le contexte des captures d’écrans des graphiques grâce
-              à html2canvas.
+              A la deuxième ligne, on remarque que l'export se fait selon la
+              fonction "exportHTML" avec les données en propriété "exportData".
+              Dans cette fonction, je vais rendre la construction de la page
+              HTML à exporter. Pour les données, j’ai utilisé le hook useContext
+              pour les stocker et les faire passer d’un composant à un autre
+              pour tout déplacer vers la fonction d’export et ainsi construire
+              la page HTML à rendre. Après avoir réussi à exporter les données
+              des inputs, j’ai réalisé qu’il serait trop compliqué et trop long
+              de faire passer les graphiques en passant par le contexte. J'ai
+              alors utilisé une autre méthode que celle que j’avais Initialement
+              envisagée : mettre dans le contexte des captures d’écrans des
+              graphiques grâce à html2canvas.
               <br />« html2canvas » permet de transformer tout ou partie d’une
-              page en canvas, et donc en image. Pour l’utiliser, il faut faire
-              ainsi :
-            </p>
-            {/* // html2canvas(document.body).then(function(canvas) {
-            //     document.body.appendChild(canvas);
-            // }); */}
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
-              {" "}
-              Comme on peut le voir, il s’agit d’une promesse. Il faudra la
-              réaliser en asynchrone, de cette manière :
-            </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-          /> */}
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-10">
+              page en canvas, et donc en image. <br />
               L’écran est donc capturé. Mais dans un fichier HTML seul, les
               images ne s’affichent pas. Il faut alors les traduire en format
               base64 pour que le HTML puisse les lire et les afficher sans avoir
               à joindre de fichier.
             </p>
-            {/* <img
-            className="lg:w-8/12 block lg:ml-10"
-            src="schema-techno.png"
-            alt="Schéma des technologies de l'entreprise"
-          /> */}
+            <div className="flex justify-center">
+              <img
+                className="block"
+                src="elementToCanvas.png"
+                alt="Changement du format des images en base64"
+              />
+            </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              On stocke le résultat dans le contexte pour les afficher dans le
-              fichier HTML exporté. <br />
+              On a donc une variable "transductorCanvas" qui comprend la capture
+              d'un élément (constante "el"). Cette variable est traduite en
+              base64 grâce à "toDataURL()". On stocke alors le résultat dans le
+              contexte pour les afficher dans le fichier HTML exporté. <br />
               Ensuite, j'ai rajouté des "loaders" (trouvés sur TailwindUI) pour
               montrer à l'utilisateur que le fichier ou l'export est en train de
               charger.
@@ -421,12 +468,12 @@ export const Final = () => {
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
               Pour finir, j'ai testé l'application pour trouver toutes les
-              failles et bugs, les régler et mettre le projet en production
-              (comme pour Geneste). Le client a vite donné un retour, qui fût
-              par ailleurs très positif.
+              failles et bugs, les régler et mettre le projet en production. Le
+              client a vite donné un retour, qui fût par ailleurs très positif.
             </p>
           </div>
         </section>
+        {/* <Planning /> */}
         <section className="max-w-8xl mx-auto container bg-white pt-16">
           <div role="contentinfo" className="flex items-center flex-col p-4">
             <h2 className="focus:outline-none border-b-2 text-2xl pb-10 mb-20 lg:pb-16 lg:mb-28 lg:text-4xl font-extrabold text-center leading-8 text-amber-600 lg:w-5/12 md:w-9/12 pt-4">
@@ -492,14 +539,6 @@ export const Final = () => {
             </p>
           </div>
         </section>
-
-        <div className="relative flex flex-col justify-center items-center">
-          <Link to="/">
-            <button className="w-full sm:w-auto text-base leading-4 text-center text-white py-6 px-16 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 hover:bg-gray-500 ">
-              Retourner à l'accueil
-            </button>
-          </Link>
-        </div>
       </div>
     </div>
   );
