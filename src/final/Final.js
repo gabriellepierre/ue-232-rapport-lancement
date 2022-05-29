@@ -475,7 +475,10 @@ export const Final = () => {
               failles et bugs, les régler et mettre le projet en production. Le
               client a vite donné un retour, qui fût par ailleurs très positif.
               Vous trouverez l'application{" "}
-              <a href="https://g3aezf5t5f0udbof6txz8fi8szaanrb9-33hpg.ondigitalocean.app/">
+              <a
+                href="https://g3aezf5t5f0udbof6txz8fi8szaanrb9-33hpg.ondigitalocean.app/"
+                className="text-amber-600 hover:text-amber-800"
+              >
                 ici
               </a>
               .
