@@ -498,19 +498,34 @@ export const Final = () => {
               application qui correspondrait à ses attentes.
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              {" "}
-              (...)
+              Le projet Acoudesign s'est très bien passé. D'après oi, c'est dû
+              au fait que j'ai eu plus de facilité à demander de l'aide. Avant
+              ce projet, j'osais moins par peur de ralentir les autres. Je
+              voulais devenir autonome au plus vite pour intégrer l'équipe au
+              mieux, ce qui n'a évidemment pas été la bonne approche.
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
-              Sur le site Gaia Tree Yoga, je mettais trop de temps à le
-              finaliser. Je devais le terminer avant la fin de mon stage, et
-              j'avais la sensation que j'avançais assez vite et, sans m'en
-              rendre compte, j'ai été moins concentrée. A la dernière semaine,
-              on m'a fait remarqué que je n'étais pas assez rapide, et j'ai pris
-              conscience de mon relâchement. Aussitôt, j'ai repris mon travail
-              sérieusement et je me suis impliquée même sur mon temps personnel.
-              J'ai ainsi pu rattraper mon retard.
+              Sur le site Gaia Tree Yoga, j'ai effectué énormément de recherches
+              pour les plug-ins de réservation, et j'en ai installé et configuré
+              4 avant d'avoir l'extension définitive. J'ai perdu énormément de
+              temps à faire ça. Plus j'avançais de ce côté, plus j'avais
+              l'impression, comme le dit l'expression, de faire des boucles sur
+              une calvitie. Entre autres à cause du changement de plug-ins à
+              répétition, je mettais trop de temps à finaliser le site. Je
+              devais le terminer avant la fin de mon stage. Cependant, j'avais
+              la sensation que j'avançais assez vite pour le terminer à temps.
+              Sans m'en rendre compte, j'ai été moins concentrée. A la dernière
+              semaine, on m'a fait remarqué que je n'étais pas assez rapide, et
+              j'ai pris conscience de mon relâchement. Aussitôt, j'ai repris mon
+              travail sérieusement et je me suis impliquée même sur mon temps
+              personnel.
+              <br /> J'ai ainsi pris conscience de ma faiblesse. Désormais, je
+              pense pouvoir mieux déterminer quand je relâche mon attention et
+              réagir plus rapidement. Néanmoins, j'ai été agréablement surprise
+              par ma faculté à reprendre en main le projet. Mon implication a
+              d'ailleurs été remarquée par l'entreprie, qui m'a proposé une
+              alternance pour l'année scolaire prochaine.
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
@@ -519,9 +534,10 @@ export const Final = () => {
               tous les aspects de la technologie afin de gagner du temps
               ailleurs. Lors de mes projets, j'ai souvent eu ce mauvais réflexe
               d'aller trop vite. Si j'avais une idée du résultat final désiré,
-              j'allais directement essayer de le rendre. Je réalise maintenant
-              comme les étapes de transition sont importantes et ne sont
-              absolument pas une perte de temps, surtout à mon niveau actuel.
+              j'allais directement essayer de le rendre, sans forcément passer
+              par des intermédiaires. J'ai réalisé vers la moitié de mon stage
+              comme les étapes de transition sont importantes, surtout à mon
+              niveau actuel.
             </p>
           </div>
         </section>
@@ -534,23 +550,28 @@ export const Final = () => {
           <div>
             {" "}
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              Globalement, mon stage s'est très bien passé. Il correspond à mes
+              Je suis entièrement satisfaite de mon stage. Il correspond à mes
               attentes sur tous les points. En termes techniques, j'ai pu
               apprendre de nouvelles technologies, j'ai développé celles que
               j'avais déjà étudié, j'ai observé au plus près le quotidien d'un
-              développeur, j'ai appris à adopter une approche du travail
+              développeur, et j'ai appris à adopter une approche du travail
               différente de celle que j'avais en cours pour m'adapter au mieux.
               En termes humains, le travail au sein d'une équipe est très
-              stimulant, je me suis facilement sentie à l'aise avec mes
-              collègues . Cependant, je dirais que je n'ai pas eu assez de
-              retour sur le travail que je fournissais. Avant la dernière
-              semaine, je n'ai pas vraiment eu d'avis sur ce que je faisais, et
-              il m'était donc impossible de savoir quoi améliorer.
+              stimulant, et je me suis facilement sentie à l'aise avec mes
+              collègues. Il y a eu néanmoins des moments difficiles où j'ai
+              beaucoup douté de mon travail et de ma productivité, mais ces
+              remises en question font partie du métier de développeur et seront
+              moins fréquentes quand j'aurais des compétences plus larges.
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
-              Pour en revenir aux technologies, j'ai apprécié toutes celles que
-              j'ai apprises.
+              Pour en revenir aux technologies, j'ai particulièrement apprécié
+              manier React, surtout avec Acoudesign. Avec l'application Geneste,
+              je n'avais pas assez de recul pour avoir un avis complet puisque
+              j'étais en pleine découverte. J'admets avoir moins aimé travailler
+              sur WordPress. Toutefois, toute expérience est bonne à prendre et
+              je suis satisfaite d'avoir pu voir des aspects du CMS que je
+              n'avais pas abordé auparavant.
             </p>
           </div>
         </section>
