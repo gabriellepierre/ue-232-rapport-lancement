@@ -51,7 +51,7 @@ const Home = () => {
         <div className="border-b-2 pt-10 flex"></div>
         <Cards />
         <div className="border-b-2 pt-10 m-20 flex"></div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap p-10">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-10">
             Remerciements
           </h1>

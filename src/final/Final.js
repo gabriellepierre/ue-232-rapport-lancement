@@ -580,6 +580,13 @@ export const Final = () => {
               je suis satisfaite d'avoir pu voir des aspects du CMS que je
               n'avais pas abordé auparavant.
             </p>
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
+              Je conclue donc ce stage avec une ambition déterminée : devenir
+              développeur front-end. Je suis particulièrement attachée au fait
+              d'apporter mes idées et réfléchir à l'articulation d'une
+              application web, et endosser ce rôle pendant ce stage a été très
+              gratifant.
+            </p>
           </div>
         </section>
       </div>
