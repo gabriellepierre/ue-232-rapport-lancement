@@ -57,7 +57,18 @@ const Home = () => {
           </h1>
           <p className="text-lg leading-6 text-gray-600 ">
             Ce stage m'a beaucoup apporté, sur le plan professionnel mais aussi
-            personnel.
+            personnel. C'est pourquoi je tiens à remercier toutes les personnes
+            qui m'ont apporté leur aide pendant ce stage.
+            <br /> Dans un premier temps, je voudrais remercier Mathieu Paris,
+            le gérant de Becoms, pour m'avoir accueillie dans son entreprise et
+            pour avoir pris du temps pour m'aiguiller sur un projet en fin de
+            stage.
+            <br /> Je remercie tout particulièrement mon tuteur de stage, Jérémy
+            Paris, repsonsable du service développement. Il a été très pédagogue
+            et j'ai beaucoup appris grâce à lui. Il m'a aidé dès que j'en avais
+            le besoin, il a été patient et ... <br />
+            Pour finir, je tiens à témoigner toute ma reconnaissance à toute
+            l'équipe de développement. Ils m'ont tous apporté leur aide,
           </p>
         </div>
       </div>
