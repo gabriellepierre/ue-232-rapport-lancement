@@ -53,15 +53,9 @@ const Home = () => {
         <div className="border-b-2 pb-10 flex"></div>
         <div className="w-full lg:w-6/12 flex flex-col justify-center">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
-            L'entreprise Becoms
+            Remerciements
           </h1>
-          <p className="text-lg leading-6 text-gray-600 ">
-            BECOMS est un assembleur de technologies. <br /> L’entreprise
-            propose 3 services : infrastructure et Cloud, software et web, et
-            consulting et sécurité. Concernant le service développement, ils
-            sont spécialisés en applications web et mobile, en site web et
-            e-commerce, et en Progressive Web App.
-          </p>
+          <p className="text-lg leading-6 text-gray-600 ">(...)</p>
         </div>
       </div>
     </>
