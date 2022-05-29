@@ -38,7 +38,7 @@ const Home = () => {
               <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
                 L'entreprise Becoms
               </h1>
-              <p className="text-lg leading-6 text-gray-600 ">
+              <p className="text-lg leading-6 text-gray-600">
                 BECOMS est un assembleur de technologies. <br /> L’entreprise
                 propose 3 services : infrastructure et Cloud, software et web,
                 et consulting et sécurité. Concernant le service développement,
