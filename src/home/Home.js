@@ -51,7 +51,7 @@ const Home = () => {
         <div className="border-b-2 pt-10 flex"></div>
         <Cards />
         <div className="border-b-2 pt-10 m-20 flex"></div>
-        <div className="w-full lg:mx-40 p-5 flex flex-col justify-center">
+        <div className="w-full lg:mx-40 p-5">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800">
             Remerciements
           </h1>
