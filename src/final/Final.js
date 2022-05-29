@@ -64,7 +64,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className=" block lg:ml-10"
+                className=" block py-5"
                 src="SkeletonTitre.png"
                 alt="Squelette du titre"
               />
@@ -103,7 +103,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="MAQUETTE.png"
                 alt="Maquette fueille de présence"
               />
@@ -159,7 +159,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="TimesheetFormPropDecla.png"
                 alt="Déclaration de dataTimesheetById"
               />
@@ -172,7 +172,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="datatimesheetbyiddecla.png"
                 alt="Déclaration de dataTimesheetById"
               />
@@ -192,7 +192,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="ApiUsetimecheetmutation.png"
                 alt="API"
               />
@@ -221,7 +221,7 @@ export const Final = () => {
                 </p>
                 <div className="flex justify-center">
                   <img
-                    className="block"
+                    className="block py-5"
                     src="useformdecla.png"
                     alt="Déclaration useForm"
                   />
@@ -233,7 +233,7 @@ export const Final = () => {
                 </p>
                 <div className="flex justify-center">
                   <img
-                    className="block"
+                    className="block py-5"
                     src="useforminscriptiondonnee.png"
                     alt="Inscription de données dans le useForm"
                   />
@@ -252,7 +252,11 @@ export const Final = () => {
               afficher les plus récents au début ("sort" permettant de trier) :
             </p>
             <div className="flex justify-center">
-              <img className="block" src="tripardate.png" alt="Tri par date" />
+              <img
+                className="block py-5"
+                src="tripardate.png"
+                alt="Tri par date"
+              />
             </div>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               Cette partie a été difficle à réaliser car j'avais besoin
@@ -264,7 +268,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="Datefonction.png"
                 alt="Fonction de formattage de la date"
               />
@@ -319,7 +323,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="codepromo.png"
                 alt="Gnération aléatoire du code promo"
               />
@@ -339,7 +343,7 @@ export const Final = () => {
 
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="email.png"
                 alt="Gnération de l'email avec le code promo"
               />
@@ -424,7 +428,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="exportfilehtml.png"
                 alt="Fonction qui exporte un fichier html"
               />
@@ -451,7 +455,7 @@ export const Final = () => {
             </p>
             <div className="flex justify-center">
               <img
-                className="block"
+                className="block py-5"
                 src="elementToCanvas.png"
                 alt="Changement du format des images en base64"
               />
