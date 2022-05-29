@@ -34,7 +34,7 @@ export const Cards = () => {
                       <h3 className="f-f-r text-lg lg:text-2xl font-semibold hover:underline text-amber-600 hover:text-gray-800">
                         Lire le rapport
                       </h3>
-                      <div className="pl-2 hover:animate-ping">
+                      <div className="pl-2">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={24}
