@@ -56,7 +56,7 @@ const Home = () => {
             Remerciements
           </h1>
           <p className="text-lg leading-6 text-gray-600 flex flex-wrap">
-            Ce stage m'a beaucoup apporté, sur le plan professionnel mais aussi
+            Ce stage m'a beaucoup apporté sur le plan professionnel mais aussi
             personnel. C'est pourquoi je tiens à remercier toutes les personnes
             qui m'ont apporté leur aide pendant ce stage.
             <br /> Dans un premier temps, je voudrais remercier Mathieu Paris,
@@ -66,9 +66,11 @@ const Home = () => {
             <br /> Je remercie tout particulièrement mon tuteur de stage, Jérémy
             Paris, repsonsable du service développement. Il a été très pédagogue
             et j'ai beaucoup appris grâce à lui. Il m'a aidé dès que j'en avais
-            le besoin, il a été patient et ... <br />
+            le besoin, il a été patient et il m'a accordé sa confiance dès les
+            premiers instants. <br />
             Pour finir, je tiens à témoigner toute ma reconnaissance à toute
-            l'équipe de développement. Ils m'ont tous apporté leur aide,
+            l'équipe de développement : Ozcan Sevik, Benjamin Caure, Roméo
+            Brilland et Mao De Matos. Ils m'ont tous apporté leur aide,
           </p>
         </div>
       </div>
