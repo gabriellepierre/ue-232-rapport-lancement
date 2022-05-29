@@ -470,6 +470,11 @@ export const Final = () => {
               Pour finir, j'ai testé l'application pour trouver toutes les
               failles et bugs, les régler et mettre le projet en production. Le
               client a vite donné un retour, qui fût par ailleurs très positif.
+              Vous trouverez l'application{" "}
+              <a href="https://g3aezf5t5f0udbof6txz8fi8szaanrb9-33hpg.ondigitalocean.app/">
+                ici
+              </a>
+              .
             </p>
           </div>
         </section>
@@ -477,8 +482,7 @@ export const Final = () => {
         <section className="max-w-8xl mx-auto container bg-white pt-16">
           <div role="contentinfo" className="flex items-center flex-col p-4">
             <h2 className="focus:outline-none border-b-2 text-2xl pb-10 mb-20 lg:pb-16 lg:mb-28 lg:text-4xl font-extrabold text-center leading-8 text-amber-600 lg:w-5/12 md:w-9/12 pt-4">
-              Analyse du travail réalisé (points forts, points d'amélioration et
-              actions correctives)
+              Analyse du travail réalisé
             </h2>
           </div>
           <div>
@@ -507,6 +511,17 @@ export const Final = () => {
               conscience de mon relâchement. Aussitôt, j'ai repris mon travail
               sérieusement et je me suis impliquée même sur mon temps personnel.
               J'ai ainsi pu rattraper mon retard.
+            </p>
+            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
+              {" "}
+              Concernant mon apprentissage de React en général, j'ai voulu aller
+              trop vite au début. J'aurais dû prendre plus le temps d'étudier
+              tous les aspects de la technologie afin de gagner du temps
+              ailleurs. Lors de mes projets, j'ai souvent eu ce mauvais réflexe
+              d'aller trop vite. Si j'avais une idée du résultat final désiré,
+              j'allais directement essayer de le rendre. Je réalise maintenant
+              comme les étapes de transition sont importantes et ne sont
+              absolument pas une perte de temps, surtout à mon niveau actuel.
             </p>
           </div>
         </section>
