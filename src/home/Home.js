@@ -52,25 +52,30 @@ const Home = () => {
         <Cards />
         <div className="border-b-2 pt-10 m-20 flex"></div>
         <div className="w-full lg:mx-40 p-5 flex flex-col justify-center">
-          <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 flex">
+          <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800">
             Remerciements
           </h1>
           <p className="text-lg leading-6 text-gray-600">
             Ce stage m'a beaucoup apporté sur le plan professionnel mais aussi
             personnel. C'est pourquoi je tiens à remercier toutes les personnes
             qui m'ont apporté leur aide pendant ce stage.
-            <br /> Dans un premier temps, je voudrais remercier Mathieu Paris,
-            le gérant de Becoms, pour m'avoir accueillie dans son entreprise et
-            pour avoir pris du temps pour m'aiguiller sur un projet en fin de
-            stage.
+            <br /> Dans un premier temps, je souhaite remercier mon tuteur
+            pédagogique Monsieur Philippe Vignoles, ainsi que toute l'équipe
+            pédagogique du DEUST Webmaster et Métiers de l'Internet.
+            <br />
+            Je voudrais remercier Mathieu Paris, le gérant de Becoms, pour
+            m'avoir accueillie dans son entreprise et pour avoir pris du temps
+            pour m'aiguiller sur un projet en fin de stage.
             <br /> Je remercie tout particulièrement mon tuteur de stage, Jérémy
             Paris, repsonsable du service développement. Il a été très pédagogue
             et j'ai beaucoup appris grâce à lui. Il m'a aidé dès que j'en avais
-            le besoin, il a été patient et il m'a accordé sa confiance dès les
-            premiers instants. <br />
+            besoin, il a été patient et il m'a accordé sa confiance dès les
+            premiers instants.
+            <br />
             Pour finir, je tiens à témoigner toute ma reconnaissance à toute
             l'équipe de développement : Ozcan Sevik, Benjamin Caure, Roméo
-            Brilland et Mao De Matos. Ils m'ont tous apporté leur aide,
+            Brilland et Mao De Matos. Ils ont tous pris du temps pour m'aider et
+            m'intégrer à l'équipe.
           </p>
         </div>
       </div>
