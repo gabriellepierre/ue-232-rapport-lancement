@@ -1,7 +1,7 @@
 // import React from "react";
 
 // import { Link } from "../shared/Link";
-// import { Planning } from "./Planning";
+import { Planning } from "./Planning";
 
 export const Final = () => {
   return (
@@ -473,7 +473,7 @@ export const Final = () => {
             </p>
           </div>
         </section>
-        {/* <Planning /> */}
+        <Planning />
         <section className="max-w-8xl mx-auto container bg-white pt-16">
           <div role="contentinfo" className="flex items-center flex-col p-4">
             <h2 className="focus:outline-none border-b-2 text-2xl pb-10 mb-20 lg:pb-16 lg:mb-28 lg:text-4xl font-extrabold text-center leading-8 text-amber-600 lg:w-5/12 md:w-9/12 pt-4">
