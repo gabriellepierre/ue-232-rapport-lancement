@@ -55,7 +55,10 @@ const Home = () => {
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 flex justify-center">
             Remerciements
           </h1>
-          <p className="text-lg leading-6 text-gray-600 ">(...)</p>
+          <p className="text-lg leading-6 text-gray-600 ">
+            Ce stage m'a beaucoup apporté, sur le plan professionnel mais aussi
+            personnel.
+          </p>
         </div>
       </div>
     </>
