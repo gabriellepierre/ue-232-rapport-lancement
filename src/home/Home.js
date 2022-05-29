@@ -66,11 +66,11 @@ const Home = () => {
             Je voudrais remercier Monsieur Mathieu Paris, le gérant de Becoms,
             pour m'avoir accueillie dans son entreprise et pour avoir pris du
             temps pour m'aiguiller sur un projet en fin de stage.
-            <br /> Je remercie tout particulièrement mon tuteur de stage,
-            Monsieur Jérémy Paris, repsonsable du service développement. Il a
-            été très pédagogue et j'ai beaucoup appris grâce à lui. Il m'a aidé
-            dès que j'en avais besoin, il a été patient et il m'a accordé sa
-            confiance dès les premiers instants.
+            <br /> Je remercie également mon tuteur de stage, Monsieur Jérémy
+            Paris, repsonsable du service développement. Il a été très pédagogue
+            et j'ai beaucoup appris grâce à lui. Il m'a aidé dès que j'en avais
+            besoin, il a été patient et il m'a accordé sa confiance dès les
+            premiers instants.
             <br />
             Pour finir, je tiens à témoigner toute ma reconnaissance à toute
             l'équipe de développement : Monsieur Ozcan Sevik, Monsieur Benjamin
