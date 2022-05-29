@@ -31,10 +31,10 @@ export const Cards = () => {
 
                   <Link to="/lancement">
                     <div className="flex items-center cursor-pointer md:pb-0">
-                      <h3 className="f-f-r text-lg lg:text-2xl font-semibold underline text-indigo-700">
+                      <h3 className="f-f-r text-lg lg:text-2xl font-semibold hover:underline text-amber-600 hover:text-gray-800">
                         Lire le rapport
                       </h3>
-                      <div className="pl-2">
+                      <div className="pl-2 hover:animate-ping">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={24}
@@ -89,7 +89,7 @@ export const Cards = () => {
                   </div>
                   <Link to="/final">
                     <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                      <h3 className="f-f-r text-lg lg:text-2xl font-semibold underline text-indigo-700">
+                      <h3 className="f-f-r text-lg lg:text-2xl font-semibold hover:underline text-amber-600 hover:text-gray-800">
                         Lire le rapport
                       </h3>
                       <div className="pl-2">
