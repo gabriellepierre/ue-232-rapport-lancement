@@ -498,7 +498,7 @@ export const Final = () => {
               application qui correspondrait à ses attentes.
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              Le projet Acoudesign s'est très bien passé. D'après oi, c'est dû
+              Le projet Acoudesign s'est très bien passé. D'après moi, c'est dû
               au fait que j'ai eu plus de facilité à demander de l'aide. Avant
               ce projet, j'osais moins par peur de ralentir les autres. Je
               voulais devenir autonome au plus vite pour intégrer l'équipe au
