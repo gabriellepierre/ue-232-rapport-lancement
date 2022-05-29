@@ -59,7 +59,7 @@ export const Planning = () => {
               Semaine 4
             </h3>
             <p className=" text-gray-600 font-normal text-base leading-7">
-              Gaia tree yoga : mise en page, installation et paramétrage de
+              Gaia Tree Yoga : mise en page, installation et paramétrage de
               plug-ins. Problème avec WordPress : déterminer d'où il vient et
               revenir en arrière dans les sauvegarde (grâce à OVH).
             </p>
@@ -73,7 +73,7 @@ export const Planning = () => {
               Semaine 5
             </h3>
             <p className=" text-gray-600 font-normal text-base leading-7">
-              Gaia tree yoga : descendre le theme en local pour tester d'où
+              Gaia Tree Yoga : descendre le theme en local pour tester d'où
               vient le problème, initialisation des cookies / mentions légales /
               CGU ; création compte stripe du client, recherche de plug in de
               reservation.
@@ -92,7 +92,7 @@ export const Planning = () => {
               à exporter un fichier, stocker dans un contexte (hook) les données
               nécessaires au document HTML à exporter) commencement CSS du
               fichier d'export ; <br />
-              Gaia tree yoga : barre de cookies; mises à jour.
+              Gaia Tree Yoga : barre de cookies; mises à jour.
             </p>
           </div>
         </div>
