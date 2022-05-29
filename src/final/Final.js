@@ -1,7 +1,7 @@
 // import React from "react";
 
-import { Link } from "../shared/Link";
-import { Planning } from "./Planning";
+// import { Link } from "../shared/Link";
+// import { Planning } from "./Planning";
 
 export const Final = () => {
   return (
