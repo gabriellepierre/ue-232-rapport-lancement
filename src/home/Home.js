@@ -63,19 +63,19 @@ const Home = () => {
             pédagogique Monsieur Philippe Vignoles, ainsi que toute l'équipe
             pédagogique du DEUST Webmaster et Métiers de l'Internet.
             <br />
-            Je voudrais remercier Mathieu Paris, le gérant de Becoms, pour
-            m'avoir accueillie dans son entreprise et pour avoir pris du temps
-            pour m'aiguiller sur un projet en fin de stage.
-            <br /> Je remercie tout particulièrement mon tuteur de stage, Jérémy
-            Paris, repsonsable du service développement. Il a été très pédagogue
-            et j'ai beaucoup appris grâce à lui. Il m'a aidé dès que j'en avais
-            besoin, il a été patient et il m'a accordé sa confiance dès les
-            premiers instants.
+            Je voudrais remercier Monsieur Mathieu Paris, le gérant de Becoms,
+            pour m'avoir accueillie dans son entreprise et pour avoir pris du
+            temps pour m'aiguiller sur un projet en fin de stage.
+            <br /> Je remercie tout particulièrement mon tuteur de stage,
+            Monsieur Jérémy Paris, repsonsable du service développement. Il a
+            été très pédagogue et j'ai beaucoup appris grâce à lui. Il m'a aidé
+            dès que j'en avais besoin, il a été patient et il m'a accordé sa
+            confiance dès les premiers instants.
             <br />
             Pour finir, je tiens à témoigner toute ma reconnaissance à toute
-            l'équipe de développement : Ozcan Sevik, Benjamin Caure, Roméo
-            Brilland et Mao De Matos. Ils ont tous pris du temps pour m'aider et
-            m'intégrer à l'équipe.
+            l'équipe de développement : Monsieur Ozcan Sevik, Monsieur Benjamin
+            Caure, Monsieur Roméo Brilland et Monsieur Mao De Matos. Ils ont
+            tous pris du temps pour m'aider et m'intégrer à l'équipe.
           </p>
         </div>
       </div>
