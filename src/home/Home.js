@@ -52,7 +52,7 @@ const Home = () => {
         <Cards />
         <div className="border-b-2 pt-10 m-20 flex"></div>
         <div className="container lg:mx-40 p-5">
-          <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800">
+          <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-10">
             Remerciements
           </h1>
           <p className="text-lg leading-6 text-gray-600 flex flex-wrap">
