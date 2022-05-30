@@ -71,7 +71,7 @@ export const Final = () => {
               chargement de la page est en "success".
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              Concernant la feuile de présence, nous devions faire en sorte que
+              Concernant la feuille de présence, nous devions faire en sorte que
               l'utilisateur puisse marquer le nombre d'heures effectuées pour
               chaque journée de la semaine, indiquer s'il avait pris son
               véhicule personnel ou non, et renseigner le motif de son absence.
