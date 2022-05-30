@@ -49,14 +49,6 @@ export const Final = () => {
             </p>
             <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
               {" "}
-              Les applications web sont donc réalisées en React.js. Pour
-              apprendre à manier cette technologie, je me baserai
-              essentiellement sur la documentation officielle. L'entreprise
-              utilise les Hooks : ce sont des fonctions qui permettent
-              l’utilisation de fonctionnalités de React sans écrire de classe.
-            </p>
-            <p className="focus:outline-none text-base text-gray-600 leading-normal pt-5 pb-2">
-              {" "}
               Avant d'attaquer la feuille de présence, j'ai construit les
               squelettes de certaines pages pour le chargement au cas où
               l'utilisateur n'aurait pas une bonne connexion. Par exemple avec
