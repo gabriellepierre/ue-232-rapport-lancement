@@ -1,6 +1,6 @@
 # Rapport de stage
 
-Rapoprt de stage réalisé en React.js pour le stage de 2ème année du DEUST Webmaster et Métiers de l'Internet; parcours développement web et applications mobiles
+Rapport de stage réalisé en React.js pour le stage de 2ème année du DEUST Webmaster et Métiers de l'Internet; parcours développement web et applications mobiles
 
 
 Getting Started with Create React App
